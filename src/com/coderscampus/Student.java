@@ -56,10 +56,7 @@ public class Student implements Comparable<Student>, Serializable {
 
     @Override
     public int compareTo(Student that) {
-        if (this.course.compareTo(that.course) == 0){
-            return 0;
-        }
-        return -1;
+        return this.getGrade().compareTo(that.getGrade());
     }
 
 
